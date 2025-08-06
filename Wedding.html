@@ -1,0 +1,2391 @@
+<!-- TEMPLATE 1 ds  -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ilisa & Michael's Wedding</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400,600">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #a37a74;
+            --secondary-color: #f8f3f0;
+            --accent-color: #d4b8b0;
+            --text-dark: #3a3a3a;
+            --text-light: #f8f3f0;
+        }
+
+        body,
+        h1,
+        h2,
+        h3 {
+            font-family: "Raleway", sans-serif;
+            color: var(--text-dark);
+        }
+
+        body,
+        html {
+            height: 100%;
+            scroll-behavior: smooth;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.1em;
+        }
+
+        .bgimg {
+            min-height: 100vh;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            position: relative;
+        }
+
+        .hero-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+        }
+
+        .invitation-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+        }
+
+        .w3-pale-red {
+            background-color: var(--secondary-color) !important;
+        }
+
+        .w3-text-grey {
+            color: var(--text-dark) !important;
+        }
+
+        .couple-img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .couple-img:hover {
+            transform: scale(1.02);
+        }
+
+        .venue-img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .countdown-box {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .countdown-number {
+            font-size: 2.5em;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .countdown-label {
+            font-size: 1em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #000
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: var(--accent-color);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+            border-radius: 3px;
+        }
+
+        .timeline-container {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+
+        .timeline-container::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -12px;
+            background-color: white;
+            border: 4px solid var(--primary-color);
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .left {
+            left: 0;
+        }
+
+        .right {
+            left: 50%;
+        }
+
+        .left::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            right: 30px;
+            border: medium solid var(--accent-color);
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent var(--accent-color);
+        }
+
+        .right::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            left: 30px;
+            border: medium solid var(--accent-color);
+            border-width: 10px 10px 10px 0;
+            border-color: transparent var(--accent-color) transparent transparent;
+        }
+
+        .right::after {
+            left: -12px;
+        }
+
+        .timeline-content {
+            padding: 20px 30px;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .family-member {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .family-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid var(--accent-color);
+            margin-bottom: 15px;
+        }
+
+        .food-item {
+            margin: 15px 0;
+            padding: 15px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .food-icon {
+            font-size: 2em;
+            color: var(--primary-color);
+            margin-right: 15px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .timeline::after {
+                left: 31px;
+            }
+
+            .timeline-container {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+
+            .timeline-container::before {
+                left: 60px;
+                border: medium solid var(--accent-color);
+                border-width: 10px 10px 10px 0;
+                border-color: transparent var(--accent-color) transparent transparent;
+            }
+
+            .left::after,
+            .right::after {
+                left: 15px;
+            }
+
+            .right {
+                left: 0%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="w3-bottom w3-hide-small">
+        <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
+            <a href="#home" style="width:20%" class="w3-bar-item w3-button">Home</a>
+            <a href="#couple" style="width:20%" class="w3-bar-item w3-button">The Couple</a>
+            <a href="#schedule" style="width:20%" class="w3-bar-item w3-button">Schedule</a>
+            <a href="#families" style="width:20%" class="w3-bar-item w3-button">Our Families</a>
+            <a href="#rsvp" style="width:20%" class="w3-bar-item w3-button w3-hover-black">RSVP</a>
+        </div>
+    </div>
+
+    <div class="w3-top w3-hide-medium w3-hide-large">
+        <div class="w3-bar w3-white w3-center">
+            <a class="w3-bar-item w3-button" onclick="toggleMobileMenu()"><i class="fa fa-bars"></i></a>
+        </div>
+        <div id="mobileNav" class="w3-bar-block w3-white w3-hide">
+            <a href="#home" class="w3-bar-item w3-button" onclick="toggleMobileMenu()">Home</a>
+            <a href="#couple" class="w3-bar-item w3-button" onclick="toggleMobileMenu()">The Couple</a>
+            <a href="#schedule" class="w3-bar-item w3-button" onclick="toggleMobileMenu()">Schedule</a>
+            <a href="#families" class="w3-bar-item w3-button" onclick="toggleMobileMenu()">Our Families</a>
+            <a href="#rsvp" class="w3-bar-item w3-button" onclick="toggleMobileMenu()">RSVP</a>
+        </div>
+    </div>
+
+    <header class="w3-display-container bgimg hero-image" id="home">
+        <div class="w3-display-middle w3-text-white w3-center animate__animated animate__fadeIn">
+            <h1 class="w3-jumbo animate__animated animate__fadeInDown" style="color: ghostwhite;">Ilisa & Michael</h1>
+            <h2 class="animate__animated animate__fadeIn animate__delay-1s" style="color: ghostwhite;">Are getting
+                married</h2>
+            <h2 class="animate__animated animate__fadeIn animate__delay-2s" style="color: ghostwhite;"><b>December 31,
+                    2025</b></h2>
+
+            <div class="countdown-box w3-margin-top animate__animated animate__fadeIn animate__delay-3s">
+                <div class="w3-row">
+                    <div class="w3-col s3 m3 l3">
+                        <div class="countdown-number" id="days">00</div>
+                        <div class="countdown-label">Days</div>
+                    </div>
+                    <div class="w3-col s3 m3 l3">
+                        <div class="countdown-number" id="hours">00</div>
+                        <div class="countdown-label">Hours</div>
+                    </div>
+                    <div class="w3-col s3 m3 l3">
+                        <div class="countdown-number" id="minutes">00</div>
+                        <div class="countdown-label">Minutes</div>
+                    </div>
+                    <div class="w3-col s3 m3 l3">
+                        <div class="countdown-number" id="seconds">00</div>
+                        <div class="countdown-label">Seconds</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-display-bottommiddle w3-center w3-padding-large">
+            <a href="#couple"
+                class="w3-button w3-white w3-round-large w3-hover-opacity-off animate__animated animate__fadeIn animate__delay-4s">
+                <i class="fa fa-chevron-down"></i>
+            </a>
+        </div>
+    </header>
+
+    <div class="w3-container w3-padding-64 w3-pale-red" id="couple">
+        <div class="w3-content">
+            <h1 class="w3-center w3-text-grey"><b>The Happy Couple</b></h1>
+            <div class="w3-center w3-padding-32">
+                <img class="couple-img animate__animated animate__fadeIn"
+                    src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+                    alt="Ilisa and Michael">
+            </div>
+            <p class="animate__animated animate__fadeIn"><i>We met in college during a study abroad program in Florence,
+                    Italy.
+                    Michael spilled his cappuccino on Ilisa's sketchbook in a crowded café, and instead of getting
+                    angry,
+                    she laughed and said it added character to her drawings. That moment sparked a connection that grew
+                    stronger with every shared adventure, from hiking the Amalfi Coast to cozy winter nights back home.
+                    After five wonderful years together, Michael proposed during a sunrise hot air balloon ride over
+                    Napa Valley.
+                    Now we're excited to celebrate our love with all of you!</i>
+            </p><br>
+            <div class="w3-row animate__animated animate__fadeIn">
+                <div class="w3-half w3-center">
+                    <h3>Ilisa Johnson</h3>
+                    <p>Graphic Designer & Photographer</p>
+                    <p><i class="fas fa-heart" style="color: var(--primary-color);"></i> Loves hiking, watercolor
+                        painting, and baking sourdough bread</p>
+                </div>
+                <div class="w3-half w3-center">
+                    <h3>Michael Clark</h3>
+                    <p>Software Engineer & Musician</p>
+                    <p><i class="fas fa-heart" style="color: var(--primary-color);"></i> Loves playing jazz piano, craft
+                        beer, and woodworking</p>
+                </div>
+            </div>
+            <p class="w3-center w3-padding-32"><a href="#schedule"
+                    class="w3-button w3-black w3-round w3-padding-large w3-large animate__animated animate__pulse animate__infinite">Wedding
+                    Details</a></p>
+        </div>
+    </div>
+
+    <div class="w3-display-container bgimg invitation-image">
+        <div class="w3-display-middle w3-text-white w3-center animate__animated animate__zoomIn">
+            <h1 class="w3-jumbo" style="color: ghostwhite;">You Are Invited</h1><br>
+            <h2 class="animate__animated animate__fadeIn animate__delay-1s" style="color: ghostwhite;">To share in our
+                special day</h2>
+        </div>
+    </div>
+
+    <div class="w3-container w3-padding-64 w3-pale-red w3-center" id="schedule">
+        <div class="w3-content">
+            <h1 class="w3-text-grey"><b>Wedding Schedule</b></h1>
+            <p class="w3-large">Saturday, December 31, 2025</p>
+
+            <div class="w3-row w3-padding-32">
+                <div class="w3-half">
+                    <img class="venue-img animate__animated animate__fadeInLeft"
+                        src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                        alt="Wedding Venue">
+                </div>
+                <div class="w3-half w3-padding-large">
+                    <h2 class="animate__animated animate__fadeIn">The Venue</h2>
+                    <p class="animate__animated animate__fadeIn animate__delay-1s">Greenwood Gardens</p>
+                    <p class="animate__animated animate__fadeIn animate__delay-1s">274 Old Short Hills Road, Short
+                        Hills, NJ 07078</p>
+                    <p class="animate__animated animate__fadeIn animate__delay-2s"><i class="fas fa-phone"></i> (973)
+                        258-4026</p>
+                    <p class="animate__animated animate__fadeIn animate__delay-2s"><i class="fas fa-globe"></i>
+                        greenwoodgardens.org</p>
+                    <a href="https://maps.google.com"
+                        class="w3-button w3-black w3-round w3-margin-top animate__animated animate__fadeIn animate__delay-3s">
+                        <i class="fas fa-map-marker-alt"></i> Get Directions
+                    </a>
+                </div>
+            </div>
+
+            <div class="timeline w3-margin-top">
+                <div class="timeline-container left animate__animated animate__fadeIn">
+                    <div class="timeline-content">
+                        <h3>3:00 PM</h3>
+                        <p><i class="fas fa-ring" style="color: var(--primary-color);"></i> Ceremony</p>
+                        <p>Outdoor garden ceremony</p>
+                        <p><em>Dress: Semi-formal garden party attire</em></p>
+                    </div>
+                </div>
+                <div class="timeline-container right animate__animated animate__fadeIn">
+                    <div class="timeline-content">
+                        <h3>4:00 PM</h3>
+                        <p><i class="fas fa-cocktail" style="color: var(--primary-color);"></i> Cocktail Hour</p>
+                        <p>Hors d'oeuvres and drinks on the terrace</p>
+                    </div>
+                </div>
+                <div class="timeline-container left animate__animated animate__fadeIn">
+                    <div class="timeline-content">
+                        <h3>5:30 PM</h3>
+                        <p><i class="fas fa-utensils" style="color: var(--primary-color);"></i> Reception & Dinner</p>
+                        <p>Plated dinner with wine service</p>
+                    </div>
+                </div>
+                <div class="timeline-container right animate__animated animate__fadeIn">
+                    <div class="timeline-content">
+                        <h3>7:00 PM</h3>
+                        <p><i class="fas fa-cake" style="color: var(--primary-color);"></i> Cake Cutting</p>
+                        <p>Followed by dessert buffet</p>
+                    </div>
+                </div>
+                <div class="timeline-container left animate__animated animate__fadeIn">
+                    <div class="timeline-content">
+                        <h3>8:00 PM</h3>
+                        <p><i class="fas fa-music" style="color: var(--primary-color);"></i> Dancing</p>
+                        <p>Live band performance</p>
+                    </div>
+                </div>
+                <div class="timeline-container right animate__animated animate__fadeIn">
+                    <div class="timeline-content">
+                        <h3>10:30 PM</h3>
+                        <p><i class="fas fa-fire" style="color: var(--primary-color);"></i> Sparkler Send-off</p>
+                        <p>Grand finale celebration</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="w3-padding-32 animate__animated animate__fadeIn">Food & Drinks</h2>
+            <div class="w3-row-padding">
+                <div class="w3-third animate__animated animate__fadeIn">
+                    <div class="food-item">
+                        <h3><i class="fas fa-apple-alt food-icon"></i> Cocktail Hour</h3>
+                        <p>Artisan cheese display</p>
+                        <p>Mini crab cakes</p>
+                        <p>Bruschetta station</p>
+                        <p>Signature cocktails</p>
+                    </div>
+                </div>
+                <div class="w3-third animate__animated animate__fadeIn animate__delay-1s">
+                    <div class="food-item">
+                        <h3><i class="fas fa-utensils food-icon"></i> Dinner</h3>
+                        <p><strong>Starter:</strong> Seasonal salad</p>
+                        <p><strong>Entrées:</strong> Filet mignon or miso-glazed salmon</p>
+                        <p><strong>Sides:</strong> Garlic mashed potatoes, roasted vegetables</p>
+                    </div>
+                </div>
+                <div class="w3-third animate__animated animate__fadeIn animate__delay-2s">
+                    <div class="food-item">
+                        <h3><i class="fas fa-ice-cream food-icon"></i> Dessert</h3>
+                        <p>Three-tier wedding cake (vanilla & chocolate)</p>
+                        <p>Mini dessert buffet</p>
+                        <p>Coffee & tea station</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container w3-padding-64 w3-pale-red" id="families">
+        <div class="w3-content">
+            <h1 class="w3-center w3-text-grey"><b>Our Families</b></h1>
+
+            <div class="w3-row-padding w3-center w3-margin-top">
+                <h2 class="w3-col s12">The Johnson Family</h2>
+                <div class="w3-col s6 m3 family-member animate__animated animate__fadeIn">
+                    <img class="family-img"
+                        src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                        alt="Ilisa's Parents">
+                    <h4>Robert & Elizabeth Johnson</h4>
+                    <p>Parents of the Bride</p>
+                </div>
+                <div class="w3-col s6 m3 family-member animate__animated animate__fadeIn animate__delay-1s">
+                    <img class="family-img"
+                        src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+                        alt="Ilisa's Brother">
+                    <h4>David Johnson</h4>
+                    <p>Brother of the Bride</p>
+                </div>
+                <div class="w3-col s6 m3 family-member animate__animated animate__fadeIn animate__delay-2s">
+                    <img class="family-img"
+                        src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1888&q=80"
+                        alt="Ilisa's Grandmother">
+                    <h4>Margaret Johnson</h4>
+                    <p>Grandmother of the Bride</p>
+                </div>
+                <div class="w3-col s6 m3 family-member animate__animated animate__fadeIn animate__delay-3s">
+                    <img class="family-img"
+                        src="https://images.unsplash.com/photo-1542103749-8ef59b94f47e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                        alt="Ilisa's Aunt">
+                    <h4>Susan Parker</h4>
+                    <p>Aunt of the Bride</p>
+                </div>
+            </div>
+
+            <div class="w3-row-padding w3-center w3-margin-top">
+                <h2 class="w3-col s12">The Clark Family</h2>
+                <div class="w3-col s6 m3 family-member animate__animated animate__fadeIn">
+                    <img class="family-img"
+                        src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                        alt="Michael's Parents">
+                    <h4>Wei & Mei Clark</h4>
+                    <p>Parents of the Groom</p>
+                </div>
+                <div class="w3-col s6 m3 family-member animate__animated animate__fadeIn animate__delay-1s">
+                    <img class="family-img"
+                        src="https://images.unsplash.com/photo-1546820389-44d77e1f3b31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+                        alt="Michael's Sister">
+                    <h4>Jennifer Clark</h4>
+                    <p>Sister of the Groom</p>
+                </div>
+                <div class="w3-col s6 m3 family-member animate__animated animate__fadeIn animate__delay-2s">
+                    <img class="family-img"
+                        src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+                        alt="Michael's Uncle">
+                    <h4>James Clark</h4>
+                    <p>Uncle of the Groom</p>
+                </div>
+                <div class="w3-col s6 m3 family-member animate__animated animate__fadeIn animate__delay-3s">
+                    <img class="family-img"
+                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+                        alt="Michael's Cousin">
+                    <h4>Andrew Li</h4>
+                    <p>Cousin of the Groom</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container w3-padding-64 w3-center" id="rsvp"
+        style="background-color: var(--primary-color); color: white;">
+        <h1 class="animate__animated animate__pulse">HOPE YOU CAN MAKE IT!</h1>
+        <p class="w3-large animate__animated animate__fadeIn animate__delay-1s">Kindly Respond By September 1, 2023</p>
+        <p class="w3-xlarge animate__animated animate__fadeIn animate__delay-2s">
+            <button onclick="document.getElementById('id01').style.display='block'"
+                class="w3-button w3-round w3-white w3-opacity w3-hover-opacity-off"
+                style="padding:8px 60px">RSVP</button>
+        </p>
+    </div>
+
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
+            <div class="w3-container w3-white w3-center">
+                <span onclick="document.getElementById('id01').style.display='none'"
+                    class="w3-button w3-display-topright w3-large">&times;</span>
+                <h1 class="w3-wide">CAN YOU COME?</h1>
+                <p>We really hope you can make it.</p>
+                <form id="rsvpForm">
+                    <div class="w3-row-padding" style="margin:16px 0">
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="First Name" name="firstName"
+                                required>
+                        </div>
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Last Name" name="lastName"
+                                required>
+                        </div>
+                    </div>
+                    <input class="w3-input w3-border" type="email" placeholder="Email" name="email"
+                        style="margin-bottom:16px" required>
+                    <input class="w3-input w3-border" type="number" placeholder="Number of Guests" name="guests" min="1"
+                        max="10" style="margin-bottom:16px" required>
+                    <textarea class="w3-input w3-border" placeholder="Dietary Restrictions or Song Requests"
+                        name="notes" style="margin-bottom:16px"></textarea>
+
+                    <div class="w3-row" style="margin:24px 0">
+                        <div class="w3-half">
+                            <button type="button" onclick="submitRSVP(true)"
+                                class="w3-button w3-block w3-green w3-padding-large">
+                                <i class="fas fa-check"></i> Accept With Pleasure
+                            </button>
+                        </div>
+                        <div class="w3-half">
+                            <button type="button" onclick="submitRSVP(false)"
+                                class="w3-button w3-block w3-red w3-padding-large">
+                                <i class="fas fa-times"></i> Regretfully Decline
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <p><i>Sincerely, Ilisa & Michael</i></p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="w3-center w3-padding-16" style="background-color: var(--secondary-color);">
+        <p>Made with <i class="fas fa-heart" style="color: var(--primary-color);"></i> for Ilisa & Michael's Wedding</p>
+        <div class="w3-xlarge w3-padding-16">
+            <a href="#" class="w3-hover-opacity"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="w3-hover-opacity"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="w3-hover-opacity"><i class="fab fa-pinterest"></i></a>
+        </div>
+        <p>© 2023 Ilisa & Michael</p>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            var x = document.getElementById("mobileNav");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+        function updateCountdown() {
+            const weddingDate = new Date("December 31, 2025 15:00:00").getTime();
+            const now = new Date().getTime();
+            const distance = weddingDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerHTML = days.toString().padStart(2, '0');
+            document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
+            document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
+            document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        function submitRSVP(attending) {
+            const form = document.getElementById('rsvpForm');
+            const requiredFields = form.querySelectorAll('[required]');
+            let isValid = true;
+
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    field.style.borderColor = 'red';
+                    isValid = false;
+                } else {
+                    field.style.borderColor = '';
+                }
+            });
+
+            if (!isValid) {
+                alert('Please fill out all required fields');
+                return;
+            }
+
+            const formData = {
+                firstName: form.firstName.value,
+                lastName: form.lastName.value,
+                email: form.email.value,
+                guests: form.guests.value,
+                notes: form.notes.value,
+                attending: attending
+            };
+
+            console.log('RSVP Submitted:', formData);
+
+            alert(`Thank you for your RSVP! You have ${attending ? 'accepted' : 'declined'} the invitation.`);
+            document.getElementById('id01').style.display = 'none';
+            form.reset();
+        }
+
+        window.addEventListener('scroll', function () {
+            const elements = document.querySelectorAll('.animate__animated');
+
+            elements.forEach(element => {
+                const position = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.3;
+
+                if (position < screenPosition) {
+                    const animation = element.getAttribute('data-animation');
+                    element.classList.add(animation);
+                }
+            });
+        });
+    </script>
+</body>
+
+</html> -->
+
+<!-- 2nd templatecloud: -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jane & John's Wedding</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #ff6b9d;
+            --secondary-color: #c44569;
+            --accent-color: #f8b500;
+            --text-dark: #2c2c2c;
+            --text-light: #ffffff;
+            --bg-light: #fef7f7;
+            --gradient: linear-gradient(135deg, #ff6b9d 0%, #c44569 100%);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+
+        .fancy-font {
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-content {
+            color: var(--text-light);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .hero h2 {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            font-weight: 300;
+            opacity: 0.9;
+        }
+
+        .wedding-date {
+            font-size: 2rem;
+            font-weight: 600;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-top: 1rem;
+        }
+
+        .heart {
+            position: absolute;
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            animation: float 6s ease-in-out infinite;
+            opacity: 0.7;
+        }
+
+        .heart:nth-child(2) { left: 10%; animation-delay: -2s; }
+        .heart:nth-child(3) { left: 20%; animation-delay: -1s; }
+        .heart:nth-child(4) { right: 10%; animation-delay: -3s; }
+        .heart:nth-child(5) { right: 20%; animation-delay: -0.5s; }
+
+        .navbar {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(255, 107, 157, 0.2);
+            z-index: 1000;
+            transform: translateY(100px);
+            animation: slideUp 0.8s ease-out 0.5s forwards;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+            
+        }
+
+        .nav-item {
+            padding: 0.8rem 1.5rem;
+            margin: 0 0.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nav-item:hover {
+            background: var(--gradient);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(255, 107, 157, 0.3);
+        }
+
+        .section {
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 3rem;
+            color: var(--secondary-color);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '♥';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -20px;
+            color: var(--primary-color);
+            font-size: 2rem;
+        }
+
+        .about {
+            background: var(--bg-light);
+            text-align: center;
+        }
+
+        .couple-photo {
+            width: 300px;
+            height: 400px;
+            border-radius: 20px;
+            object-fit: cover;
+            margin: 2rem auto;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .couple-photo:hover {
+            transform: scale(1.05) rotate(2deg);
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            opacity: 0;
+            animation: fadeIn 1s ease-out 0.5s forwards;
+        }
+
+        .wedding-details {
+            background: white;
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .detail-card {
+            background: var(--bg-light);
+            padding: 2rem;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .detail-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary-color);
+        }
+
+        .detail-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .detail-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--secondary-color);
+        }
+
+        .detail-card p {
+            margin-bottom: 0.5rem;
+        }
+
+        .family {
+            background: var(--bg-light);
+        }
+
+        .family-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .family-member {
+            text-align: center;
+            /* background: white; */            
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .family-member:hover {
+            transform: translateY(-5px);
+        }
+
+        .family-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 1rem;
+            border: 4px solid var(--primary-color);
+        }
+
+        .timeline {
+            background: white;
+            padding: 5rem 2rem;
+        }
+
+        .timeline-container {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .timeline-item {
+            display: flex;
+            align-items: center;
+            margin: 2rem 0;
+            position: relative;
+        }
+
+        .timeline-time {
+            background: var(--gradient);
+            color: white;
+            padding: 1rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            min-width: 150px;
+            text-align: center;
+        }
+
+        .timeline-content {
+            background: var(--bg-light);
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin-left: 2rem;
+            flex: 1;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .rsvp {
+            background: var(--gradient);
+            color: white;
+            text-align: center;
+        }
+
+        .rsvp-button {
+            background: white;
+            color: var(--secondary-color);
+            padding: 1rem 3rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 2rem;
+        }
+
+        .rsvp-button:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            z-index: 2000;
+            backdrop-filter: blur(5px);
+        }
+
+        .modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.8);
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .modal.show .modal-content {
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        .modal input {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #eee;
+            border-radius: 10px;
+            margin: 1rem 0;
+            font-size: 1rem;
+        }
+
+        .modal-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .modal-button {
+            flex: 1;
+            padding: 1rem;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-accept {
+            background: #4CAF50;
+            color: white;
+        }
+
+        .btn-decline {
+            background: #f44336;
+            color: white;
+        }
+
+        .modal-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(100px);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .scroll-fade {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .scroll-fade.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .section-title { font-size: 2rem; }
+            .navbar { position: relative; }
+            .nav-container { flex-wrap: wrap; }
+            .details-grid { grid-template-columns: 1fr; }
+            .timeline-item { flex-direction: column; text-align: center; }
+            .timeline-content { margin-left: 0; margin-top: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="heart">♥</div>
+    <div class="heart">♥</div>
+    <div class="heart">♥</div>
+    <div class="heart">♥</div>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="fancy-font">Jane & John</h1>
+            <h2>Are getting married</h2>
+            <div class="wedding-date fancy-font">July 17, 2024</div>
+        </div>
+    </section>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-item">Home</a>
+            <a href="#about" class="nav-item">Our Story</a>
+            <a href="#wedding" class="nav-item">Wedding</a>
+            <a href="#family" class="nav-item">Family</a>
+            <a href="#timeline" class="nav-item">Timeline</a>
+            <a href="#rsvp" class="nav-item">RSVP</a>
+        </div>
+    </nav>
+
+    <section class="section about scroll-fade" id="about">
+        <h2 class="section-title fancy-font">Our Story</h2>
+        <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800&q=80" alt="Jane & John" class="couple-photo">
+        <p class="about-text">
+            We met on a beautiful spring day in 2019, and from that moment, we knew we were meant to be together. 
+            After years of adventures, laughter, and love, we're ready to take the next step in our journey. 
+            We can't wait to celebrate this special day with all of you - our beloved family and friends who have 
+            supported us along the way. Join us as we say "I do" and begin our new chapter as husband and wife.
+        </p>
+        <a href="#wedding" class="rsvp-button" style="background: var(--gradient); color: white;">Wedding Details</a>
+    </section>
+
+    <section class="section wedding-details scroll-fade" id="wedding">
+        <h2 class="section-title fancy-font">Wedding Details</h2>
+        <div class="details-grid">
+            <div class="detail-card">
+                <div class="detail-icon">📅</div>
+                <h3>When</h3>
+                <p><strong>Wedding Ceremony</strong></p>
+                <p>July 17, 2024</p>
+                <p>2:00 PM - 3:30 PM</p>
+                <br>
+                <p><strong>Reception & Dinner</strong></p>
+                <p>5:00 PM - 11:00 PM</p>
+            </div>
+            <div class="detail-card">
+                <div class="detail-icon">📍</div>
+                <h3>Where</h3>
+                <p><strong>Ceremony Venue</strong></p>
+                <p>St. Mary's Church</p>
+                <p>123 Chapel Street</p>
+                <p>Downtown, City 12345</p>
+                <br>
+                <p><strong>Reception Venue</strong></p>
+                <p>Grand Ballroom Hotel</p>
+                <p>456 Celebration Avenue</p>
+            </div>
+            <div class="detail-card">
+                <div class="detail-icon">🍽️</div>
+                <h3>Menu & Dining</h3>
+                <p><strong>Cocktail Hour</strong></p>
+                <p>5:00 PM - 6:00 PM</p>
+                <br>
+                <p><strong>Dinner Service</strong></p>
+                <p>7:00 PM - 9:00 PM</p>
+                <p>3-course plated dinner</p>
+                <p>Vegetarian options available</p>
+            </div>
+            <div class="detail-card">
+                <div class="detail-icon">👗</div>
+                <h3>Dress Code</h3>
+                <p><strong>Semi-Formal</strong></p>
+                <p>Cocktail attire preferred</p>
+                <br>
+                <p><strong>Color Palette</strong></p>
+                <p>Blush Pink & Navy Blue</p>
+                <p>Please avoid wearing white</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section family scroll-fade" id="family">
+        <h2 class="section-title fancy-font">Our Families</h2>
+        <div class="family-grid">
+            <div class="family-member">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=240&h=240&q=80" alt="John's Father" class="family-photo">
+                <h4>Robert Johnson</h4>
+                <p>Father of the Groom</p>
+            </div>
+            <div class="family-member">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=240&h=240&q=80" alt="John's Mother" class="family-photo">
+                <h4>Ilisa Johnson</h4>
+                <p>Mother of the Groom</p>
+            </div>
+            <div class="family-member">
+                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=240&h=240&q=80" alt="Jane's Father" class="family-photo">
+                <h4>Michael Smith</h4>
+                <p>Father of the Bride</p>
+            </div>
+            <div class="family-member">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=240&h=240&q=80" alt="Jane's Mother" class="family-photo">
+                <h4>Linda Smith</h4>
+                <p>Mother of the Bride</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="timeline scroll-fade" id="timeline">
+        <h2 class="section-title fancy-font">Wedding Day Timeline</h2>
+        <div class="timeline-container">
+            <div class="timeline-item">
+                <div class="timeline-time">1:30 PM</div>
+                <div class="timeline-content">
+                    <h4>Guest Arrival</h4>
+                    <p>Guests arrive at St. Mary's Church for ceremony</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-time">2:00 PM</div>
+                <div class="timeline-content">
+                    <h4>Wedding Ceremony</h4>
+                    <p>Exchange of vows and rings</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-time">3:30 PM</div>
+                <div class="timeline-content">
+                    <h4>Photo Session</h4>
+                    <p>Wedding party and family photos</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-time">5:00 PM</div>
+                <div class="timeline-content">
+                    <h4>Cocktail Hour</h4>
+                    <p>Drinks, appetizers, and mingling at the reception venue</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-time">6:00 PM</div>
+                <div class="timeline-content">
+                    <h4>Grand Entrance</h4>
+                    <p>Introduction of the wedding party</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-time">7:00 PM</div>
+                <div class="timeline-content">
+                    <h4>Dinner Service</h4>
+                    <p>Three-course plated dinner</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-time">9:00 PM</div>
+                <div class="timeline-content">
+                    <h4>Dancing & Celebration</h4>
+                    <p>First dance, cake cutting, and party time!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section rsvp scroll-fade" id="rsvp">
+        <h2 class="section-title fancy-font" style="color: white;">We Hope You Can Make It!</h2>
+        <p style="font-size: 1.2rem; margin-bottom: 1rem;">Kindly respond by June 1st, 2024</p>
+        <button class="rsvp-button" onclick="openModal()">RSVP Now</button>
+    </section>
+
+    <div id="rsvpModal" class="modal">
+        <div class="modal-content">
+            <h2 class="fancy-font" style="color: var(--secondary-color); margin-bottom: 1rem;">Can You Join Us?</h2>
+            <p style="margin-bottom: 2rem;">We really hope you can make it to our special day!</p>
+            <form id="rsvpForm">
+                <input type="text" placeholder="Your Name(s)" name="name" required>
+                <input type="email" placeholder="Email Address" name="email">
+                <input type="number" placeholder="Number of Guests" name="guests" min="1" max="10">
+            </form>
+            <p style="font-style: italic; margin: 1rem 0;"><em>With love, John & Jane</em></p>
+            <div class="modal-buttons">
+                <button class="modal-button btn-accept" onclick="submitRSVP('attending')">We'll Be There! 🎉</button>
+                <button class="modal-button btn-decline" onclick="submitRSVP('not-attending')">Can't Make It 😔</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
+
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.scroll-fade').forEach(el => {
+            observer.observe(el);
+        });
+
+        function openModal() {
+            const modal = document.getElementById('rsvpModal');
+            modal.style.display = 'block';
+            setTimeout(() => modal.classList.add('show'), 10);
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('rsvpModal');
+            modal.classList.remove('show');
+            setTimeout(() => modal.style.display = 'none', 300);
+        }
+
+        function submitRSVP(response) {
+            const form = document.getElementById('rsvpForm');
+            const name = form.name.value;
+            
+            if (!name) {
+                alert('Please enter your name');
+                return;
+            }
+
+            alert(response === 'attending' 
+                ? `Thank you ${name}! We're excited to celebrate with you! 🎉`
+                : `Thank you ${name} for letting us know. You'll be missed! 💕`
+            );
+            
+            form.reset();
+            closeModal();
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById('rsvpModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const navItems = document.querySelectorAll('.nav-item');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (scrollY >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navItems.forEach(item => {
+                item.classList.remove('active');
+                if (item.getAttribute('href') === `#${current}`) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+<!-- 3rd tempplate cg -->
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Wedding Invitation</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: "Raleway", sans-serif;
+        }
+
+        html,
+        body {
+            height: 100%;
+            scroll-behavior: smooth;
+        }
+
+        p {
+            line-height: 2;
+        }
+
+        .bgimg {
+            background-image: url("https://images.unsplash.com/photo-1542204165-65bf26472b9b?auto=format&fit=crop&w=1470&q=80");
+            min-height: 100%;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="w3-display-container w3-wide bgimg w3-grayscale-min fade-in" id="home">
+        <div class="w3-display-middle w3-text-white w3-center">
+            <h1 class="w3-jumbo w3-animate-top">Rahul & Meera</h1>
+            <h2 class="w3-animate-bottom">Are Getting Married</h2>
+            <h3><b>On 15th December 2025</b></h3>
+        </div>
+    </header>
+
+    <div class="w3-bottom w3-hide-small">
+        <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
+            <a href="#home" class="w3-bar-item w3-button" style="width:25%">Home</a>
+            <a href="#about" class="w3-bar-item w3-button" style="width:25%">About Us</a>
+            <a href="#wedding" class="w3-bar-item w3-button" style="width:25%">Wedding</a>
+            <a href="#rsvp" class="w3-bar-item w3-button w3-hover-black" style="width:25%">RSVP</a>
+        </div>
+    </div>
+
+    <div class="w3-container w3-padding-64 w3-pale-red w3-center fade-in" id="about">
+        <h2 class="w3-text-grey">Rahul & Meera</h2>
+        <img src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?auto=format&fit=crop&w=1470&q=80" alt="Couple" style="max-width: 700px;">
+        <p><i>With immense happiness, we invite you to join us in celebrating our wedding. Your presence will make our day even more special.</i></p>
+    </div>
+
+    <div class="w3-display-container bgimg fade-in">
+        <div class="w3-display-middle w3-text-white w3-center">
+            <h1 class="w3-jumbo">You Are Invited</h1>
+            <h3>With Blessings from Our Families</h3>
+        </div>
+    </div>
+
+    <div class="w3-container w3-padding-64 w3-pale-red w3-center fade-in" id="wedding">
+        <h2 class="w3-text-grey">Wedding Details</h2>
+        <img src="https://images.unsplash.com/photo-1509228627152-72ae9ae6848b?auto=format&fit=crop&w=1470&q=80" alt="Wedding Location">
+        <div class="w3-row-padding w3-margin-top">
+            <div class="w3-half">
+                <h3>📅 Date & Time</h3>
+                <p>Wedding Ceremony - 11:00 AM</p>
+                <p>Lunch - 1:00 PM onwards</p>
+            </div>
+            <div class="w3-half">
+                <h3>📍 Location</h3>
+                <p>Shivneri Banquet Hall, Pune</p>
+                <p>Maharashtra, India</p>
+            </div>
+        </div>
+        <div class="w3-margin-top">
+            <h3>👨‍👩‍👧‍👦 With Blessings From:</h3>
+            <p>Mr. & Mrs. Ramesh Sharma (Groom's Parents)</p>
+            <p>Mr. & Mrs. Anil Verma (Bride's Parents)</p>
+        </div>
+    </div>
+
+    <div class="w3-container w3-padding-64 w3-pale-red w3-center fade-in" id="rsvp">
+        <h2>Hope You Can Join Us!</h2>
+        <p class="w3-large">Kindly respond by 5th December 2025</p>
+        <p class="w3-xlarge">
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:10px 60px">RSVP</button>
+        </p>
+    </div>
+
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
+            <div class="w3-container w3-white w3-center">
+                <h2>Can You Attend?</h2>
+                <form>
+                    <input class="w3-input w3-border" type="text" placeholder="Your Name" name="name">
+                </form>
+                <p><i>With love, Rahul & Meera</i></p>
+                <div class="w3-row">
+                    <div class="w3-half">
+                        <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-green w3-block">Yes</button>
+                    </div>
+                    <div class="w3-half">
+                        <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-red w3-block">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-hide-small" style="margin-bottom:32px">&nbsp;</div>
+</body>
+</html> -->
+
+
+<!-- template 4 dhag  marathi-->
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>मीरा आणि समीरन - Meera & Sameeran's Wedding</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@300;400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #FF6B35;
+            --secondary-color: #B8860B;
+            --accent-color: #DC143C;
+            --gold-color: #FFD700;
+            --text-dark: #2c2c2c;
+            --text-light: #ffffff;
+            --bg-light: #FFF8DC;
+            --saffron: #FF9933;
+            --maroon: #800000;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            overflow-x: hidden;
+            background: #FFF8DC;
+        }
+
+        .devanagari-font {
+            font-family: 'Noto Sans Devanagari', sans-serif;
+        }
+
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-content {
+            color: var(--text-light);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            color: var(--gold-color);
+        }
+
+        .hero .marathi-text {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--saffron);
+        }
+
+        .hero h2 {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            font-weight: 300;
+            opacity: 0.9;
+        }
+
+        .wedding-date {
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--gold-color);
+            margin-top: 1rem;
+        }
+
+        .floating-element {
+            position: absolute;
+            color: var(--gold-color);
+            font-size: 2rem;
+            animation: float 8s ease-in-out infinite;
+            opacity: 0.6;
+        }
+
+        .floating-element:nth-child(2) {
+            left: 5%;
+            animation-delay: -2s;
+        }
+
+        .floating-element:nth-child(3) {
+            left: 15%;
+            animation-delay: -1s;
+        }
+
+        .floating-element:nth-child(4) {
+            right: 5%;
+            animation-delay: -3s;
+        }
+
+        .floating-element:nth-child(5) {
+            right: 15%;
+            animation-delay: -0.5s;
+        }
+
+        .navbar {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: rgba(255, 215, 0, 0.95);
+            backdrop-filter: blur(10px);
+            border-top: 3px solid var(--maroon);
+            z-index: 1000;
+            transform: translateY(100px);
+            animation: slideUp 0.8s ease-out 0.5s forwards;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        .nav-item {
+            padding: 0.8rem 1.5rem;
+            margin: 0 0.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            color: var(--maroon);
+            font-weight: 600;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nav-item:hover {
+            background: var(--maroon);
+            color: var(--gold-color);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(128, 0, 0, 0.3);
+        }
+
+        .section {
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 3rem;
+            color: var(--maroon);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '🕉️';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -20px;
+            color: var(--gold-color);
+            font-size: 2rem;
+        }
+
+        .about {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 30px;
+            margin: 2rem;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border: 3px solid var(--gold-color);
+        }
+
+        .couple-photo {
+            width: 300px;
+            height: 400px;
+            border-radius: 20px;
+            object-fit: cover;
+            margin: 2rem auto;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            border: 4px solid var(--gold-color);
+        }
+
+        .couple-photo:hover {
+            transform: scale(1.05) rotate(2deg);
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            opacity: 0;
+            animation: fadeIn 1s ease-out 0.5s forwards;
+        }
+
+        .wedding-details {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 30px;
+            margin: 2rem;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            border: 3px solid var(--gold-color);
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .detail-card {
+            background: var(--bg-light);
+            padding: 2rem;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            border: 2px solid var(--gold-color);
+        }
+
+        .detail-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--maroon);
+            box-shadow: 0 15px 40px rgba(128, 0, 0, 0.2);
+        }
+
+        .detail-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--maroon);
+        }
+
+        .detail-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--maroon);
+        }
+
+        .detail-card p {
+            margin-bottom: 0.5rem;
+        }
+
+        .marathi-label {
+            color: var(--saffron);
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .family {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 30px;
+            margin: 2rem;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            border: 3px solid var(--gold-color);
+        }
+
+        .family-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .family-member {
+            text-align: center;
+            background: var(--bg-light);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            border: 2px solid var(--gold-color);
+        }
+
+        .family-member:hover {
+            transform: translateY(-5px);
+            border-color: var(--maroon);
+        }
+
+        .family-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 1rem;
+            border: 4px solid var(--maroon);
+        }
+
+        .timeline {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 30px;
+            margin: 2rem;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            border: 3px solid var(--gold-color);
+            padding: 5rem 2rem;
+        }
+
+        .timeline-container {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .timeline-item {
+            display: flex;
+            align-items: center;
+            margin: 2rem 0;
+            position: relative;
+        }
+
+        .timeline-time {
+            background: linear-gradient(135deg, var(--maroon) 0%, var(--saffron) 100%);
+            color: white;
+            padding: 1rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            min-width: 150px;
+            text-align: center;
+        }
+
+        .timeline-content {
+            background: var(--bg-light);
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin-left: 2rem;
+            flex: 1;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border: 2px solid var(--gold-color);
+        }
+
+        .ceremony-name {
+            color: var(--saffron);
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+
+        .rsvp {
+            background: rgba(128, 0, 0, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 30px;
+            margin: 2rem;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+            color: white;
+            text-align: center;
+            margin-bottom: 5rem;
+            border: 3px solid var(--gold-color);
+        }
+
+        .rsvp-button {
+            background: var(--gold-color);
+            color: var(--maroon);
+            padding: 1rem 3rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 2rem;
+        }
+
+        .rsvp-button:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            background: var(--saffron);
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 2000;
+            backdrop-filter: blur(5px);
+        }
+
+        .modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.8);
+            background: var(--bg-light);
+            padding: 3rem;
+            border-radius: 20px;
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+            transition: transform 0.3s ease;
+            border: 3px solid var(--gold-color);
+        }
+
+        .modal.show .modal-content {
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        .modal input {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid var(--gold-color);
+            border-radius: 10px;
+            margin: 1rem 0;
+            font-size: 1rem;
+        }
+
+        .modal-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .modal-button {
+            flex: 1;
+            padding: 1rem;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-accept {
+            background: #4CAF50;
+            color: white;
+        }
+
+        .btn-decline {
+            background: #f44336;
+            color: white;
+        }
+
+        .modal-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(100px);
+            }
+
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+
+            25% {
+                transform: translateY(-15px) rotate(5deg);
+            }
+
+            50% {
+                transform: translateY(-30px) rotate(0deg);
+            }
+
+            75% {
+                transform: translateY(-15px) rotate(-5deg);
+            }
+        }
+
+        .scroll-fade {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .scroll-fade.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero .marathi-text {
+                font-size: 1.8rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .navbar {
+                position: relative;
+            }
+
+            .nav-container {
+                flex-wrap: wrap;
+            }
+
+            .details-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .timeline-item {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .timeline-content {
+                margin-left: 0;
+                margin-top: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="floating-element">🕉️</div>
+    <div class="floating-element">🪔</div>
+    <div class="floating-element">🌺</div>
+    <div class="floating-element">🥥</div>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="devanagari-text marathi-text">मीरा आणि समीरन</h1>
+            <h1>Meera & Sameeran</h1>
+            <h2>विवाह समारंभ - Marriage Ceremony</h2>
+            <div class="wedding-date devanagari-font">३१ डिसेंबर २०२५ | December 31, 2025</div>
+        </div>
+    </section>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-item">Home</a>
+            <a href="#about" class="nav-item">Our Story</a>
+            <a href="#wedding" class="nav-item">Wedding</a>
+            <a href="#family" class="nav-item">Family</a>
+            <a href="#timeline" class="nav-item">Rituals</a>
+            <a href="#rsvp" class="nav-item">RSVP</a>
+        </div>
+    </nav>
+
+    <section class="section about scroll-fade" id="about">
+        <h2 class="section-title devanagari-font">आमची गोष्ट | Our Story</h2>
+        <img src="https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800&q=80"
+            alt="Meera & Sameeran" class="couple-photo">
+        <p class="about-text">
+            आम्ही २०२१ मध्ये पुण्यात भेटलो आणि त्या दिवसापासून आमचं जीवन सुंदर झालं. आमच्या कुटुंबीयांच्या आशीर्वादाने
+            आम्ही लग्नाचा निर्णय घेतला आहे.
+            आमच्या या शुभ प्रसंगी तुमची उपस्थिती हवी. |
+            We met in Pune in 2021, and from that day our lives became beautiful. With our families' blessings, we have
+            decided to get married.
+            We need your presence on this auspicious occasion. Come celebrate this sacred bond of marriage with us as we
+            begin our new journey together.
+        </p>
+        <a href="#wedding" class="rsvp-button">विवाह तपशील | Wedding Details</a>
+    </section>
+
+    <section class="section wedding-details scroll-fade" id="wedding">
+        <h2 class="section-title devanagari-font">विवाह तपशील | Wedding Details</h2>
+        <div class="details-grid">
+            <div class="detail-card">
+                <div class="detail-icon">📅</div>
+                <h3>केव्हा | When</h3>
+                <p class="marathi-label">विवाह समारंभ | Wedding Ceremony</p>
+                <p>December 31, 2025</p>
+                <p>सकाळी ९:०० ते दुपारी १२:०० | 9:00 AM - 12:00 PM</p>
+                <br>
+                <p class="marathi-label">रिसेप्शन | Reception</p>
+                <p>संध्याकाळी ७:०० ते रात्री ११:०० | 7:00 PM - 11:00 PM</p>
+            </div>
+            <div class="detail-card">
+                <div class="detail-icon">🏛️</div>
+                <h3>कुठे | Where</h3>
+                <p class="marathi-label">विवाह मंडप | Wedding Venue</p>
+                <p>श्री गणेश मंदिर</p>
+                <p>Shree Ganesh Temple</p>
+                <p>FC Road, Pune - 411016</p>
+                <br>
+                <p class="marathi-label">रिसेप्शन हॉल | Reception Hall</p>
+                <p>महाराष्ट्र मंडल हॉल</p>
+                <p>Maharashtra Mandal Hall</p>
+            </div>
+            <div class="detail-card">
+                <div class="detail-icon">🍽️</div>
+                <h3>जेवण | Food & Dining</h3>
+                <p class="marathi-label">सकाळचा नाश्ता | Morning Breakfast</p>
+                <p>१०:०० ते ११:३० | 10:00 AM - 11:30 AM</p>
+                <br>
+                <p class="marathi-label">दुपारचे जेवण | Lunch</p>
+                <p>१२:३० ते ३:०० | 12:30 PM - 3:00 PM</p>
+                <p>Traditional Maharashtrian Thali</p>
+                <br>
+                <p class="marathi-label">रात्रीचे जेवण | Dinner</p>
+                <p>८:०० ते १०:३० | 8:00 PM - 10:30 PM</p>
+            </div>
+            <div class="detail-card">
+                <div class="detail-icon">👘</div>
+                <h3>पोशाख | Dress Code</h3>
+                <p class="marathi-label">पारंपरिक | Traditional</p>
+                <p>साडी, लेहेंगा | Saree, Lehenga</p>
+                <p>कुर्ता, धोतर | Kurta, Dhoti</p>
+                <br>
+                <p class="marathi-label">रंग योजना | Color Scheme</p>
+                <p>केसरी आणि लाल | Saffron & Red</p>
+                <p>सोनेरी आणि मरून | Gold & Maroon</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section family scroll-fade" id="family">
+        <h2 class="section-title devanagari-font">आमचे कुटुंब | Our Families</h2>
+        <div class="family-grid">
+            <div class="family-member">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=240&h=240&q=80"
+                    alt="Sameeran's Father" class="family-photo">
+                <h4>विनोद पाटील | Vinod Patil</h4>
+                <p>वराचे वडील | Father of the Groom</p>
+            </div>
+            <div class="family-member">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=240&h=240&q=80"
+                    alt="Sameeran's Mother" class="family-photo">
+                <h4>सुनीता पाटील | Sunita Patil</h4>
+                <p>वराची आई | Mother of the Groom</p>
+            </div>
+            <div class="family-member">
+                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=240&h=240&q=80"
+                    alt="Meera's Father" class="family-photo">
+                <h4>राजेश शर्मा | Rajesh Sharma</h4>
+                <p>वधूचे वडील | Father of the Bride</p>
+            </div>
+            <div class="family-member">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=240&h=240&q=80"
+                    alt="Meera's Mother" class="family-photo">
+                <h4>मीरा शर्मा | Meera Sharma</h4>
+                <p>वधूची आई | Mother of the Bride</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="timeline scroll-fade" id="timeline">
+        <h2 class="section-title devanagari-font">विवाह विधी | Wedding Rituals</h2>
+        <div class="timeline-container">
+            <div class="timeline-item">
+                <div class="timeline-time">सकाळी ७:०० | 7:00 AM</div>
+                <div class="timeline-content">
+                    <h4>गणपती पूजा | Ganpati Puja</h4>
+                    <p>Beginning the ceremony with Lord Ganesh's blessings</p>
+                    <div class="ceremony-name">विघ्नहर्ता गणेशाच्या पूजेने सुरुवात</div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-time">८:०० | 8:00 AM</div>
+                <div class="timeline-content">
+                    <h4>हळदी | Haldi Ceremony</h4>
+                    <p>Turmeric ceremony for purification and blessings</p>
+                    <div class="ceremony-name">शुद्धीकरण आणि मंगलकारी हळदी</div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-time">९:३० | 9:30 AM</div>
+                <div class="timeline-content">
+                    <h4>वरयात्रा | Baraat Arrival</h4>
+                    <p>Groom's procession with dhol-tasha pathak</p>
+                    <div class="ceremony-name">ढोल-ताशा पथकासह वरयात्रा</div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-time">१०:०० | 10:00 AM</div>
+                <div class="timeline-content">
+                    <h4>स्वागत आणि आरती | Welcome & Aarti</h4>
+                    <p>Traditional welcome of the groom</p>
+                    <div class="ceremony-name">वराचे पारंपरिक स्वागत</div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-time">११:०० | 11:00 AM</div>
+                <div class="timeline-content">
+                    <h4>अंतर्पात | Antarpat Ceremony</h4>
+                    <p>Sacred cloth ceremony before the couple meets</p>
+                    <div class="ceremony-name">वर-वधू भेटण्यापूर्वी अंतर्पात विधी</div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-time">११:३० | 11:30 AM</div>
+                <div class="timeline-content">
+                    <h4>सप्तपदी | Saptapadi</h4>
+                    <p>Seven sacred vows around the holy fire</p>
+                    <div class="ceremony-name">अग्निसाक्षीने सात फेरे</div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-time">७:०० | 7:00 PM</div>
+                <div class="timeline-content">
+                    <h4>रिसेप्शन | Reception</h4>
+                    <p>Celebration dinner with music and dance</p>
+                    <div class="ceremony-name">संगीत आणि नृत्यासह सेलिब्रेशन</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section rsvp scroll-fade" id="rsvp">
+        <h2 class="section-title devanagari-font" style="color: var(--gold-color);">तुमची उपस्थिती हवी | We Hope You Can
+            Make It!</h2>
+        <p style="font-size: 1.2rem; margin-bottom: 1rem;">कृपया १५ डिसेंबर पर्यंत कळवा | Kindly respond by December
+            15th, 2025</p>
+        <button class="rsvp-button" onclick="openModal()">उत्तर द्या | RSVP Now</button>
+    </section>
+
+    <div id="rsvpModal" class="modal">
+        <div class="modal-content">
+            <h2 class="devanagari-font" style="color: var(--maroon); margin-bottom: 1rem;">तुम्ही येणार का? | Can You
+                Join Us?</h2>
+            <p style="margin-bottom: 2rem;">आमच्या विवाह समारंभात सहभागी होण्यासाठी कृपया खालील माहिती भरा | Please fill
+                the details below to attend our wedding</p>
+
+            <input type="text" placeholder="Your Name | तुमचे नाव" required>
+            <input type="email" placeholder="Email Address | ईमेल" required>
+            <input type="tel" placeholder="Phone Number | फोन नंबर">
+            <select
+                style="width: 100%; padding: 1rem; border: 2px solid var(--gold-color); border-radius: 10px; margin: 1rem 0; font-size: 1rem;">
+                <option value="">Number of Guests | पाहुण्यांची संख्या</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5+">5+</option>
+            </select>
+            <textarea placeholder="Any dietary restrictions? | काही आहार संबंधी निर्बंध?"
+                style="width: 100%; padding: 1rem; border: 2px solid var(--gold-color); border-radius: 10px; margin: 1rem 0; font-size: 1rem; min-height: 80px;"></textarea>
+
+            <div class="modal-buttons">
+                <button class="modal-button btn-accept" onclick="submitRSVP(true)">होय, मी येईन | Accept</button>
+                <button class="modal-button btn-decline" onclick="submitRSVP(false)">क्षमस्व, येऊ शकत नाही |
+                    Decline</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+<script>
+    const modal = document.getElementById('rsvpModal');
+
+    function openModal() {
+        modal.style.display = 'block';
+        setTimeout(() => {
+            modal.classList.add('show');
+        }, 10);
+    }
+
+    function closeModal() {
+        modal.classList.remove('show');
+        setTimeout(() => {
+            modal.style.display = 'none';
+        }, 300);
+    }
+
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            closeModal();
+        }
+    }
+
+    function submitRSVP(attending) {
+        const name = document.querySelector('.modal input[type="text"]').value;
+        if (!name) {
+            alert('Please enter your name | कृपया आपले नाव प्रविष्ट करा');
+            return;
+        }
+
+        const email = document.querySelector('.modal input[type="email"]').value;
+        const phone = document.querySelector('.modal input[type="tel"]').value;
+        const guests = document.querySelector('.modal select').value;
+        const dietary = document.querySelector('.modal textarea').value;
+
+        if (attending) {
+            alert(`धन्यवाद ${name}! आम्ही तुमची वाट पाहत आहोत! | Thank you ${name}! We look forward to seeing you!`);
+
+            console.log('RSVP Accepted:', {
+                name,
+                email,
+                phone,
+                guests,
+                dietary,
+                attending: true
+            });
+        } else {
+            alert(`आम्ही तुमच्या निवडीचा आदर करतो ${name}. धन्यवाद! | We respect your decision ${name}. Thank you!`);
+
+            console.log('RSVP Declined:', {
+                name,
+                email,
+                phone,
+                attending: false
+            });
+        }
+        document.querySelector('.modal form').reset();
+        closeModal();
+    }
+</script>
+</html> -->
